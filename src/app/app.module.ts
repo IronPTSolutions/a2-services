@@ -1,3 +1,4 @@
+import { CounterService } from './shared/services/counter.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -12,7 +13,7 @@ import { CounterComponent } from './components/counter/counter.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [CounterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
